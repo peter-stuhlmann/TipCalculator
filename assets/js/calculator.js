@@ -3,7 +3,7 @@ function tip_calculator() {
     let amount = parseInt(document.querySelector("#amount").value),
         satisfaction = parseInt(document.querySelector('input[name="satisfaction"]:checked').value),
         persons = parseInt(document.querySelector("#persons").value),
-        tipUnrounded = (amount / 100 * satisfaction),
+        tipUnrounded = ((amount / 100 * satisfaction) - amount),
         tip = parseInt(tipUnrounded.toFixed(2).replace('.', ',')),
         totalUnrounded = (amount + tip),
         total = parseInt(totalUnrounded.toFixed(2).replace('.', ',')),
