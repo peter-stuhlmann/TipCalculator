@@ -40,4 +40,37 @@ form {
             color: $brightColor
         }
     }
+
+    input[type="button"],
+    input[type="reset"] {
+        position: relative;
+        top: -6px;
+        color: $brightColor;
+        border: none;
+        transition: all 40ms linear;
+        padding: $verticalPadding $horizontalPadding;
+        margin-right: 10px;
+
+        &:active:focus,
+        &:focus:hover,
+        &:focus {
+            outline: none
+        }
+
+        &:active {
+            top: 2px
+        }
+
+        box-shadow: 0 0 0 1px #210D17 inset,
+        0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+        0 8px 0 0 #210D17,
+        0 8px 8px 1px rgba(0, 0, 0, 0.5);
+        background-color: $primaryColor;
+        border-radius: 10px;
+
+        &:active {
+            box-shadow: 0 0 0 1px #210D17 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+            background-color: $primaryColor
+        }
+    }
 }

@@ -33,4 +33,29 @@ form input[type="number"] {
   form input[type="number"]::placeholder {
     color: #fff; }
 
+form input[type="button"],
+form input[type="reset"] {
+  position: relative;
+  top: -6px;
+  color: #fff;
+  border: none;
+  transition: all 40ms linear;
+  padding: 20px 40px;
+  margin-right: 10px;
+  box-shadow: 0 0 0 1px #210D17 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #210D17, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+  background-color: #401a2d;
+  border-radius: 10px; }
+  form input[type="button"]:active:focus, form input[type="button"]:focus:hover, form input[type="button"]:focus,
+  form input[type="reset"]:active:focus,
+  form input[type="reset"]:focus:hover,
+  form input[type="reset"]:focus {
+    outline: none; }
+  form input[type="button"]:active,
+  form input[type="reset"]:active {
+    top: 2px; }
+  form input[type="button"]:active,
+  form input[type="reset"]:active {
+    box-shadow: 0 0 0 1px #210D17 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+    background-color: #401a2d; }
+
 /*# sourceMappingURL=style.css.map */
