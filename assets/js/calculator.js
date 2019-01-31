@@ -38,6 +38,7 @@ function tc_reset() {
     document.querySelector("#result-tip").innerHTML = "";
     document.querySelector("#result-total").innerHTML = "";
     document.querySelector("#result-eachPerson").innerHTML = "";
+    document.querySelector("#split-bill").style.display = "none";
 }
 
 document.querySelector('#calculate').addEventListener('click', tip_calculator);
