@@ -33,4 +33,12 @@ function splitBill() {
     }
 }
 
+function tc_reset() {
+    document.querySelector("#result-amount").innerHTML = "";
+    document.querySelector("#result-tip").innerHTML = "";
+    document.querySelector("#result-total").innerHTML = "";
+    document.querySelector("#result-eachPerson").innerHTML = "";
+}
+
 document.querySelector('#calculate').addEventListener('click', tip_calculator);
+document.querySelector('#reset').addEventListener('click', tc_reset);
