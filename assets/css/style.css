@@ -13,13 +13,22 @@ main {
   color: #fff;
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
   padding: 20px 40px;
-  border-radius: 7px; }
+  border-radius: 7px;
+  box-sizing: border-box; }
   main h1 {
     font-size: 2.8em; }
+    @media only screen and (max-width: 480px) {
+      main h1 {
+        font-size: 2em;
+        text-align: center; } }
 
 form fieldset {
   border: none;
   padding: 20px 0 calc(20px * 3) 0; }
+
+@media only screen and (max-width: 480px) {
+  form .amount {
+    text-align: center; } }
 
 form input[type="number"] {
   font-size: 1em;
@@ -45,6 +54,11 @@ form input[type="reset"] {
   box-shadow: 0 0 0 1px #210D17 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #210D17, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
   background-color: #401a2d;
   border-radius: 10px; }
+  @media only screen and (max-width: 480px) {
+    form input[type="button"],
+    form input[type="reset"] {
+      width: 100%;
+      margin-top: 11px; } }
   form input[type="button"]:active:focus, form input[type="button"]:focus:hover, form input[type="button"]:focus,
   form input[type="reset"]:active:focus,
   form input[type="reset"]:focus:hover,
