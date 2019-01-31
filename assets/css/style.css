@@ -81,4 +81,7 @@ form input[type="reset"] {
 #result-total {
   margin: 0; }
 
+#result-eachPerson {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
