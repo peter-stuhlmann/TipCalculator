@@ -58,4 +58,12 @@ form input[type="reset"] {
     box-shadow: 0 0 0 1px #210D17 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
     background-color: #401a2d; }
 
+#output {
+  margin-top: 40px; }
+
+#result-amount,
+#result-tip,
+#result-total {
+  margin: 0; }
+
 /*# sourceMappingURL=style.css.map */
