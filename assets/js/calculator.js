@@ -21,15 +21,15 @@ function tip_calculator() {
 
 function splitBill() {
     // Get the checkbox
-    var checkBox = document.getElementById("split");
+    let checkBox = document.getElementById("split");
     // Get the output text
-    var text = document.getElementById("split-bill");
+    let inputNumberOfPersons = document.getElementById("split-bill");
 
-    // If the checkbox is checked, display the output text
+    // If the checkbox is checked, display the inputNumberOfPersons input field
     if (checkBox.checked == true) {
-        text.style.display = "block";
+        inputNumberOfPersons.style.display = "block";
     } else {
-        text.style.display = "none";
+        inputNumberOfPersons.style.display = "none";
     }
 }
 
