@@ -37,6 +37,13 @@
                 </fieldset>
             </div>
 
+            <input type="checkbox" id="split" onclick="splitBill()"><label for="split">Split bill?</label><br>
+
+            <div id="split-bill" style="display:none">
+                <label for="persons"><strong>Number of persons:</strong></label> <input id="persons" type="number" min="0" step="1" value="1">
+            </div>
+
+           <br>
             <div class="tc_buttons">
                 <input type="button" id="calculate" value="Calculate">
                 <input type="reset" value="Reset">
@@ -46,6 +53,7 @@
                 <p id="result-amount"></p>
                 <p id="result-tip"></p>
                 <p id="result-total"></p>
+                <p id="result-eachPerson"></p>
             </div>
         </form>
     </main>
