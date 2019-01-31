@@ -7,7 +7,8 @@ function tip_calculator() {
         tip = parseInt(tipUnrounded.toFixed(2).replace('.', ',')),
         totalUnrounded = (amount + tip),
         total = parseInt(totalUnrounded.toFixed(2).replace('.', ',')),
-        eachPerson = (total / persons)
+        eachPersonUnrounded = (total / persons),
+        eachPerson = parseInt(eachPersonUnrounded.toFixed(2).replace('.', ','))
 
     if (persons > 1) {
         document.querySelector("#result-eachPerson").style.display = "block"
