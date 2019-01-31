@@ -17,7 +17,7 @@
         <form>
 
             <div class="amount">
-                <label for="amount"><strong>Insert the amount:</strong></label> <input id="amount" type="number" min="0" step="1" placeholder="55"> <strong>euro</strong>
+                <label for="amount"><strong>Insert the amount:</strong></label> <input id="amount" type="number" min="0" step="1" value="55"> <strong>euro</strong>
             </div>
 
             <div class="satisfaction">
@@ -42,8 +42,11 @@
                 <input type="reset" value="Reset">
             </div>
 
-            <p id="tip-result"></p>
-
+            <div id="output">
+                <p id="result-amount"></p>
+                <p id="result-tip"></p>
+                <p id="result-total"></p>
+            </div>
         </form>
     </main>
 
