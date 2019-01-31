@@ -1,0 +1,16 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/partials/_variables.scss",
+		"../scss/partials/_layout.scss"
+	],
+	"sourcesContent": [
+		"@import \"partials/variables\";\n@import \"partials/layout\";\n\n@import url('https://fonts.googleapis.com/css?family=Amatic+SC');",
+		"$primaryColor: rgb(64,26,45);\n$secondaryColor: #FF69B4;\n\n$brightColor: #fff;\n\n$horizontalPadding: 40px;\n$verticalPadding: 20px;\n\n$borderRadius: 7px;\n\n$linearGradient: linear-gradient(to right, rgba(64,26,45,1) 0%,rgba(64,26,45,0) 50%);\n\n$primaryFont: 'Amatic SC', cursive;\n",
+		"body {\n    background-image: url('../images/burger.jpg');\n    background-size: cover;\n    font-size: 34px;\n    font-family: $primaryFont\n}\n\nmain {\n    width: 100%;\n    max-width: 1000px;\n    margin: 30px auto;\n    background-image: $linearGradient;\n    color: $brightColor;\n    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);\n    padding: $verticalPadding $horizontalPadding;\n    border-radius: $borderRadius;\n\n    h1 {\n        font-size: 2.8em\n    }\n}\n\nform {\n    fieldset {\n        border: none;\n        padding: $verticalPadding 0 calc(#{$verticalPadding} * 3) 0;\n    }\n\n    input[type=\"number\"] {\n        font-size: 1em;\n        padding-left: 15px;\n        width: 80px;\n        background-color: rgba(64, 26, 45, 0.7);\n        color: $brightColor;\n        border: none;\n        border-radius: $borderRadius;\n        outline: none;\n\n        &::placeholder {\n            color: $brightColor\n        }\n    }\n}"
+	],
+	"names": [],
+	"mappings": "AAGA,OAAO,CAAC,wDAAI;AEHZ,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,2BAA2B;EAC7C,eAAe,EAAE,KAAK;EACtB,SAAS,EAAE,IAAI;EACf,WAAW,EDQD,WAAW,EAAE,OAAO,GCPjC;;AAED,AAAA,IAAI,CAAC;EACD,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,MAAM;EACjB,MAAM,EAAE,SAAS;EACjB,gBAAgB,EDDH,8DAAmE;ECEhF,KAAK,EDTK,IAAI;ECUd,WAAW,EAAE,GAAG,CAAC,GAAG,CAAC,GAAG,CAAC,kBAAkB;EAC3C,OAAO,EDRO,IAAI,CADF,IAAI;ECUpB,aAAa,EDPF,GAAG,GCYjB;EAbD,AAUI,IAVA,CAUA,EAAE,CAAC;IACC,SAAS,EAAE,KACf,GAAC;;AAGL,AACI,IADA,CACA,QAAQ,CAAC;EACL,MAAM,EAAE,IAAI;EACZ,OAAO,EDnBG,IAAI,CCmBY,CAAC,CAAC,cAA6B,CAAC,CAAC,GAC9D;;AAJL,AAMI,IANA,CAMA,KAAK,CAAA,AAAA,IAAC,CAAK,QAAQ,AAAb,EAAe;EACjB,SAAS,EAAE,GAAG;EACd,YAAY,EAAE,IAAI;EAClB,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,qBAAqB;EACvC,KAAK,ED9BC,IAAI;EC+BV,MAAM,EAAE,IAAI;EACZ,aAAa,ED3BN,GAAG;EC4BV,OAAO,EAAE,IAAI,GAKhB;EAnBL,AAgBQ,IAhBJ,CAMA,KAAK,CAAA,AAAA,IAAC,CAAK,QAAQ,AAAb,CAUD,aAAa,CAAC;IACX,KAAK,EDpCH,IAAI,GCqCT"
+}
