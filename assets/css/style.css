@@ -2,26 +2,29 @@
 body {
   background-image: url("../images/burger.jpg");
   background-size: cover;
+  background-attachment: fixed;
   font-size: 34px;
   font-family: "Amatic SC", cursive;
   margin: 0; }
 
 main {
   width: 100%;
-  max-width: 1000px;
-  margin: 30px auto;
-  background-image: linear-gradient(to right, #401a2d 0%, rgba(64, 26, 45, 0) 50%);
+  margin: 0;
+  background-image: linear-gradient(to right, #401a2d 0%, rgba(64, 26, 45, 0) 70%);
   color: #fff;
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
   padding: 20px 40px;
-  border-radius: 7px;
   box-sizing: border-box; }
-  main h1 {
-    font-size: 2.8em; }
-    @media only screen and (max-width: 480px) {
-      main h1 {
-        font-size: 2em;
-        text-align: center; } }
+  main .content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 30px auto; }
+    main .content h1 {
+      font-size: 2.8em; }
+      @media only screen and (max-width: 480px) {
+        main .content h1 {
+          font-size: 2em;
+          text-align: center; } }
 
 form fieldset {
   border: none;

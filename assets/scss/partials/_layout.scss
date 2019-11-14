@@ -1,6 +1,7 @@
 body {
     background-image: url('../images/burger.jpg');
     background-size: cover;
+    background-attachment: fixed; 
     font-size: 34px;
     font-family: $primaryFont;
     margin: 0
@@ -8,21 +9,25 @@ body {
 
 main {
     width: 100%;
-    max-width: 1000px;
-    margin: 30px auto;
+    margin: 0;
     background-image: $linearGradient;
     color: $brightColor;
     text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
     padding: $verticalPadding $horizontalPadding;
-    border-radius: $borderRadius;
     box-sizing: border-box;
 
-    h1 {
-        font-size: 2.8em;
+    .content {
+        width: 100%;
+        max-width: 1000px;
+        margin: 30px auto;
 
-        @media only screen and (max-width: $mobile) {
-            font-size: 2em;
-            text-align: center
+        h1 {
+            font-size: 2.8em;
+
+            @media only screen and (max-width: $mobile) {
+                font-size: 2em;
+                text-align: center
+            }
         }
     }
 }

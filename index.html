@@ -5,57 +5,62 @@
     <meta charset="UTF-8">
     <title>Tip Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
     <main>
-        <h1>Tip calculator</h1>
+        <div class="content">
+            <h1>Tip calculator</h1>
 
-        <form>
+            <form>
 
-            <div class="amount">
-                <label for="amount"><strong>Insert the amount:</strong></label> <input id="amount" type="number" min="0" step="1" value="55"> <strong>euro</strong>
-            </div>
+                <div class="amount">
+                    <label for="amount"><strong>Insert the amount:</strong></label> <input id="amount" type="number"
+                        min="0" step="1" value="55"> <strong>euro</strong>
+                </div>
 
-            <div class="satisfaction">
-                <fieldset>
-                    <input type="radio" id="satisfaction1" name="satisfaction" value="130">
-                    <label for="satisfaction1"><strong>Excellent</strong> (30% tip)</label><br>
-                    <input type="radio" id="satisfaction2" name="satisfaction" value="120">
-                    <label for="satisfaction2"><strong>Very good</strong> (20% tip)</label><br>
-                    <input type="radio" id="satisfaction3" name="satisfaction" value="115" checked="checked">
-                    <label for="satisfaction3"><strong>Good</strong> (15% tip)</label><br>
-                    <input type="radio" id="satisfaction4" name="satisfaction" value="110">
-                    <label for="satisfaction4"><strong>Ok</strong> (10% tip)</label><br>
-                    <input type="radio" id="satisfaction5" name="satisfaction" value="105">
-                    <label for="satisfaction5"><strong>Bad</strong> (5% tip)</label><br>
-                    <input type="radio" id="satisfaction6" name="satisfaction" value="100">
-                    <label for="satisfaction6"><strong>Very bad</strong> (0% tip)</label>
-                </fieldset>
-            </div>
+                <div class="satisfaction">
+                    <fieldset>
+                        <input type="radio" id="satisfaction1" name="satisfaction" value="130">
+                        <label for="satisfaction1"><strong>Excellent</strong> (30% tip)</label><br>
+                        <input type="radio" id="satisfaction2" name="satisfaction" value="120">
+                        <label for="satisfaction2"><strong>Very good</strong> (20% tip)</label><br>
+                        <input type="radio" id="satisfaction3" name="satisfaction" value="115" checked="checked">
+                        <label for="satisfaction3"><strong>Good</strong> (15% tip)</label><br>
+                        <input type="radio" id="satisfaction4" name="satisfaction" value="110">
+                        <label for="satisfaction4"><strong>Ok</strong> (10% tip)</label><br>
+                        <input type="radio" id="satisfaction5" name="satisfaction" value="105">
+                        <label for="satisfaction5"><strong>Bad</strong> (5% tip)</label><br>
+                        <input type="radio" id="satisfaction6" name="satisfaction" value="100">
+                        <label for="satisfaction6"><strong>Very bad</strong> (0% tip)</label>
+                    </fieldset>
+                </div>
 
-            <input type="checkbox" id="split" onclick="splitBill()"><label for="split">Split bill?</label><br>
+                <input type="checkbox" id="split" onclick="splitBill()"><label for="split">Split bill?</label><br>
 
-            <div id="split-bill" style="display:none">
-                <label for="persons"><strong>Number of persons:</strong></label> <input id="persons" type="number" min="1" step="1" value="1">
-            </div>
+                <div id="split-bill" style="display:none">
+                    <label for="persons"><strong>Number of persons:</strong></label> <input id="persons" type="number"
+                        min="1" step="1" value="1">
+                </div>
 
-           <br>
-            <div class="tc_buttons">
-                <input type="button" id="calculate" value="Calculate">
-                <input type="reset" id="reset" value="Reset">
-            </div>
+                <br>
+                <div class="tc_buttons">
+                    <input type="button" id="calculate" value="Calculate">
+                    <input type="reset" id="reset" value="Reset">
+                </div>
 
-            <div id="output">
-                <p id="result-amount"></p>
-                <p id="result-tip"></p>
-                <p id="result-total"></p>
-                <p id="result-eachPerson"></p>
-            </div>
-        </form>
+                <div id="output">
+                    <p id="result-amount"></p>
+                    <p id="result-tip"></p>
+                    <p id="result-total"></p>
+                    <p id="result-eachPerson"></p>
+                </div>
+            </form>
+        </div>
     </main>
 
     <script src="assets/js/calculator.js"></script>
